@@ -6,12 +6,12 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Splash_Activity extends  AppCompatActivity{
+public class SplashActivity extends  AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash_animation);
+        setContentView(R.layout.splashanimation);
 
         this.getSupportActionBar().hide();
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -24,7 +24,7 @@ public class Splash_Activity extends  AppCompatActivity{
                         ex.printStackTrace();
                 }
                 finally {
-                    Intent intent = new Intent(Splash_Activity.this , MainActivity.class);
+                    Intent intent = new Intent(SplashActivity.this , MainActivity.class);
                     startActivity(intent);
                     finish();
                 }
